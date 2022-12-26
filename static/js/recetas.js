@@ -1,0 +1,25 @@
+const URLactual = window.location.pathname;
+
+if (URLactual == "/recetas") {
+    if (document.querySelector(".ui-search")) {
+        const ui_search = document.querySelector(".ui-search");
+
+        ui_search.classList.toggle("invisible");
+
+        let main = document.querySelector("#root-app");
+
+        main.innerHTML = ' <div class="contenedor-recetas"> <h2>Nuestras recetas</h2> <div class="recetas"> <!-- RECETA --> <div class="receta"> <a href="/receta-red-velvet" class="imagen-receta red-velvet"> <span>Receta</span> <p>Red Velvet</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Red Velvet</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-focaccia" class="imagen-receta focaccia"> <span>Receta</span> <p>Focaccia</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Focaccia</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-empanadas-calabaza" class="imagen-receta empanadas-calabaza"> <span>Receta</span> <p>Empanadas De Calabaza</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Empanadas de calabaza</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-aceitunas-fritas" class="imagen-receta aceitunas-fritas"> <span>Receta</span> <p>Aceitunas Fritas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Aceitunas Fritas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-albondigas" class="imagen-receta albondigas"> <span>Receta</span> <p>Albondigas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Albondigas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-chutney" class="imagen-receta chutney"> <span>Receta</span> <p>Chutney</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Chutney</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-magdalenas" class="imagen-receta magdalenas"> <span>Receta</span> <p>Magdalenas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Magdalenas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-caritas" class="imagen-receta caritas"> <span>Receta</span> <p>Caritas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Caritas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-pesto" class="imagen-receta pesto"> <span>Receta</span> <p>Pesto</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Pesto</h5> </div> </div> </div>';
+
+        throw new Error("Error controlado");
+    } else if (document.querySelector(".ui-search--zrp")) {
+        const ui_search = document.querySelector(".ui-search--zrp");
+
+        ui_search.classList.toggle("invisible");
+
+        let main = document.querySelector("#root-app");
+
+        main.innerHTML = ' <div class="contenedor-recetas"> <h2>Nuestras recetas</h2> <div class="recetas"> <!-- RECETA --> <div class="receta"> <a href="/receta-red-velvet" class="imagen-receta red-velvet"> <span>Receta</span> <p>Red Velvet</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Red Velvet</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-focaccia" class="imagen-receta focaccia"> <span>Receta</span> <p>Focaccia</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Focaccia</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-empanadas-calabaza" class="imagen-receta empanadas-calabaza"> <span>Receta</span> <p>Empanadas De Calabaza</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Empanadas de calabaza</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-aceitunas-fritas" class="imagen-receta aceitunas-fritas"> <span>Receta</span> <p>Aceitunas Fritas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Aceitunas Fritas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-albondigas" class="imagen-receta albondigas"> <span>Receta</span> <p>Albondigas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Albondigas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-chutney" class="imagen-receta chutney"> <span>Receta</span> <p>Chutney</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Chutney</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-magdalenas" class="imagen-receta magdalenas"> <span>Receta</span> <p>Magdalenas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Magdalenas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-caritas" class="imagen-receta caritas"> <span>Receta</span> <p>Caritas</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Caritas</h5> </div> <!-- RECETA --> <div class="receta"> <a href="/receta-pesto" class="imagen-receta pesto"> <span>Receta</span> <p>Pesto</p> <img src="https://iili.io/LPP4h7.png" alt="logo-nucete.png" /> </a> <h5>Pesto</h5> </div> </div> </div>';
+
+        throw new Error("Error controlado");
+    }
+}

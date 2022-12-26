@@ -1,0 +1,261 @@
+<div class="contenedor-categorias invisible">
+  <p>Nuestras Categorías Destacadas</p>
+  <div class="categorias">
+    <a href="/@aceituna">
+      <img src="https://iili.io/4wUHIj.png" alt="">
+    </a>
+    <a href="/aceite-de-oliva">
+      <img src="https://iili.io/4wUJhx.png" alt="">
+    </a>
+    <a href="/pasta-de-aceitunas">
+      <img src="https://iili.io/4wU3BV.png" alt="">
+    </a>
+    <a href="/vinagre">
+      <img src="https://iili.io/4wUdLQ.png" alt="">
+    </a>
+    <a href="/combo">
+      <img src="https://iili.io/4wSymb.png" alt="">
+    </a>
+    <a href="/_DisplayType_G_Discount_5-100_NoIndex_True">
+      <img src="https://iili.io/4wSpku.png" alt="">
+    </a>
+  </div>
+</div>
+
+{{!-- <div class="newsletter-contenedor">
+  <p>¡Suscribite a nuestro Newsletter!</p>
+  <form action="">
+    <input type="email">
+    <button>Enviar</button>
+  </form>
+</div> --}}
+
+<footer>
+  <div class="fashion-nav-footer-contact">
+    <div class="fashion-nav-footer-contact__content ">
+      <div class="nav-bounds nav-bounds--contact">
+        <div class="fashion-nav-footer__brand-col ">
+          {{#if logo}}
+          <a class="nav-fashion-header__logo" href="/" id="logo-wrapper">
+            <span class="nav-header__title-hidden">{{name}}</span>
+            <img class="nav-header__image" src="https://iili.io/64IH9n.png" alt="{{name}}" itemprop="logo" />
+          </a>
+          {{else}}
+          <h3 class="nav-footer-contact-title ">
+            <a href="/">{{name}}</a>
+          </h3>
+          {{/if}}
+          <div class="fashion-nav-footer__social-media--responsive">
+            {{#each socialNetworks}}
+            <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg">
+              {{> (concat 'icons/social_networks/' (lookup . 'name'))}}
+            </a>
+            {{/each}}
+          </div>
+        </div>
+
+        {{!-- <div class="medios-pago-contenedor">
+          <p>Medios de pago</p>
+          <div class="medios-pago">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/b2c93a40-f3be-11eb-9984-b7076edb0bb7-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/b4534650-571b-11e8-95d8-631c1a9a92a9-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/33ea00e0-571a-11e8-8364-bff51f08d440-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/992bc350-f3be-11eb-826e-6db365b9e0dd-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/751ea930-571a-11e8-9a2d-4b2bd7b1bf77-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/5cc05a00-d012-11ea-be41-3936b95cb468-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/fec5f230-06ee-11ea-8e1e-273366cc763d-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/d7e55980-f3be-11eb-8e0d-6f4af49bf82e-m.svg"
+              alt="">
+            <img src="https://http2.mlstatic.com/storage/logos-api-admin/c9f71470-6f07-11ec-9b23-071a218bbe35-m.svg"
+              alt="">
+          </div>
+        </div> --}}
+        <div class="contenedor-footer">
+          <div class="categorias-footer-contenedor">
+            <p>Navegación</p>
+            <div class="categorias-footer">
+              <span class="fashion-nav-footer__category">
+                <a href="/quienes-somos" data-id="{{id}}" class="">
+                  Nosotros
+                </a>
+              </span>
+              <span class="fashion-nav-footer__category">
+                <a href="/recetas" data-id="{{id}}" class="">
+                  Recetas
+                </a>
+              </span>
+              <span class="fashion-nav-footer__category">
+                <a href="/nuestros-productos" data-id="{{id}}" class="">
+                  Tienda
+                </a>
+              </span>
+              <span class="fashion-nav-footer__category">
+                <a href="/p/contacto" data-id="{{id}}" class="">
+                  Contacto
+                </a>
+              </span>
+              <span class="fashion-nav-footer__category">
+                <a href="" data-id="{{id}}" class="">
+                  Preguntas Frecuentes
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contacto-mas-redes">
+            <div class="contacto-footer-contenedor">
+              <p>Contacto</p>
+              {{!-- <div class="contacto-footer">
+                <span class="fashion-nav-footer__category">
+                  <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt=""><a class=""
+                    itemprop="telephone" href="tel:{{phone.raw}}" rel="nofollow">Tel: {{phone.formatted}}</a>
+                </span>
+                <span class="fashion-nav-footer__category">
+                  <img src="https://cdn-icons-png.flaticon.com/512/725/725643.png" alt=""><a class=""
+                    itemprop="email" href="mailto:{{email}}" rel="nofollow">{{email}}</a>
+                </span>
+                {{#with address}}
+                <span class="fashion-nav-footer__category">
+                  <img src="https://cdn-icons-png.flaticon.com/512/0/619.png" alt=""><a class=""
+                    itemprop="streetAddress">{{address}}<br>{{city}}, {{state}}</a>
+                </span>
+                {{/with}}
+              </div> --}}
+              <div class="contacto-footer">
+                <span class="fashion-nav-footer__category">
+                  <a class="" itemprop="telephone" href="tel:" rel="nofollow">
+                    Tel. (54 11) 5173-0600.
+                  </a>
+                </span>
+                <span class="fashion-nav-footer__category">
+                  <a class="" itemprop="streetAddress">
+                    Buenos Aires - Argentina
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="redes-sociales-contenedor">
+              <p>Seguinos</p>
+              <div class="redes-sociales">
+                <a href="https://www.facebook.com/NuceteOficial/" rel="noreferrer noopener nofollow" target="_blank"
+                  class="header--custom-svg facebook"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png"
+                    alt=""></a>
+                <a href="https://www.instagram.com/nuceteoficial/" rel="noreferrer noopener nofollow" target="_blank"
+                  class="header--custom-svg instagram"><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{!-- <div class="fashion-nav-footer__pages header--custom-border">
+          <span class="fashion-nav-footer__page">
+            <a href="{{linkToHowBuy.href}}" class="">{{linkToHowBuy.label}}</a>
+          </span>
+        </div>
+
+        <div class="fashion-nav-footer__contact-col">
+          <div class="fashion-nav-footer__social-media">
+            {{#each socialNetworks}}
+            <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg">
+              {{> (concat 'icons/social_networks/' (lookup . 'name'))}}
+            </a>
+            {{/each}}
+          </div>
+          {{#if showContact}}
+          <ul class="fashion-nav-footer__contact header--custom-border">
+            {{#if showPhone}}
+            <li class="contact-phone-number">
+              <a class="" itemprop="telephone" href="tel:{{phone.raw}}" rel="nofollow">Tel:
+                {{phone.formatted}}</a>
+            </li>
+            {{/if}}
+            {{#if showEmail}}
+            <li class="contact-mail">
+              <a class="" itemprop="email" href="mailto:{{email}}" rel="nofollow">{{email}}</a>
+            </li>
+            {{/if}}
+            {{#if address}}
+            {{#with address}}
+            <li>
+              <a class="" itemprop="streetAddress">{{address}}</a>
+              <a class="" itemprop="addressLocality">{{city}}</a>
+              <a class="" itemprop="addressRegion">{{state}}</a>
+            </li>
+            {{/with}}
+            {{/if}}
+            <meta itemprop="contactType" content="customer service" />
+          </ul>
+          {{/if}}
+        </div> --}}
+
+      </div>
+    </div>
+  </div>
+  <div role="contentinfo" class="fashion-nav-footer nav-footer ">
+    <div class="nav-bounds nav-bounds--copyright">
+      <div class="nav-footer-primaryinfo">
+        <small class="nav-footer-copyright">
+          <div class="nav-footer-disclaimer">
+            <div>
+              <div class="nav-footer-about">
+                <a href="{{{linkToMShopsLandingPage}}}" target="_blank"
+                  class="">{{i18n.powered_by}}</a>
+                {{#if linkToLegalNotices}}
+                <a href="{{linkToLegalNotices.href}}" class="">{{linkToLegalNotices.label}}</a>
+                {{/if}}
+                {{#if linkToLGPD}}
+                <a href="{{linkToLGPD.href}}" class="">{{linkToLGPD.label}}</a>
+                {{/if}}
+              </div>
+              {{#if showBusinessData}}
+              {{#with fiscalData}}
+              <div class="nav-footer-fiscal-data">
+                <p class="nav-footer-fiscal-data__name">{{legal_name}}</p>
+                <p class="nav-footer-fiscal-data__id">{{legal_doc}}</p>
+              </div>
+              {{/with}}
+              {{/if}}
+            </div>
+            {{#if showQrData}}
+            {{#with fiscalData}}
+            <a href={{qr_link}} target="_F960AFIPInfo">
+              <img class="nav-footer-afip-img" src={{qr_img}} alt="Data fiscal" />
+            </a>
+            {{/with}}
+            {{/if}}
+          </div>
+        </small>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <div class="newsletter-redes-contenedor">
+    <div class="newsletter-contenedor">
+      <p>Newsletter</p>
+      <form action="">
+        <input type="email">
+        <button><img src="https://cdn-icons-png.flaticon.com/512/786/786205.png" alt=""></button>
+      </form>
+    </div>
+    <div class="redes-contenedor">
+      <p>Redes Sociales</p>
+      <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg facebook"><img
+          src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt=""></a>
+      <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg instagram"><img
+          src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt=""></a>
+    </div>
+  </div> --}}
+</footer>
