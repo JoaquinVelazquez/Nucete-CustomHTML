@@ -1176,6 +1176,7 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
     transition: 0.3s;
     visibility: hidden;
     width: 100%;
+    color: black!important;
   }
 
   .nav-fashion-header__nav-icons .nav-search-form input:focus,
