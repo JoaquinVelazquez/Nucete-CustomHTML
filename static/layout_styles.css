@@ -827,7 +827,6 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
 
 .nav-footer-about p {
   margin: 0 !important;
-  order: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -1707,11 +1706,7 @@ h1, h2, h3, h4, h5 {
   font-weight: bold!important;
 }
 
-@media (min-width: 768px) {
-  .carousel-container {
-    margin-top: 40px!important;
-  }
-}
+
 
 /*HEADER*/
 .flash-component {
@@ -3107,4 +3102,13 @@ footer .nav-header__image {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.nav-search-input{
+  color: #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+} 
+
+.input-mobile-search{
+  color: #000000 !important;
 }
